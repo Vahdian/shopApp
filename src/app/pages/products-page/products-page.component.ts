@@ -1,3 +1,4 @@
+import { ProductsServiceService } from './../../shared/sevices/products-service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products-page.component.scss']
 })
 export class ProductsPageComponent implements OnInit {
-
-  constructor() { }
+  products;
+  constructor(private productsServiceService: ProductsServiceService) { }
 
   ngOnInit(): void {
+  this.productsServiceService.getProducts().subscribe(products=>{
+    this.products = products;
+  });
   }
 
 }

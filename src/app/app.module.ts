@@ -1,10 +1,9 @@
 import { CoreModule } from './core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductsPageComponent } from './pages/products-page/products-page.component';
 
 @NgModule({
   declarations: [
@@ -12,8 +11,10 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     CoreModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

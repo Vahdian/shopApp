@@ -1,3 +1,4 @@
+import { GalleryComponent } from './../../shared/components/gallery/gallery.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -6,7 +7,7 @@ import { ProductsPageComponent } from './products-page.component';
 
 
 @NgModule({
-  declarations: [ProductsPageComponent],
+  declarations: [ProductsPageComponent, GalleryComponent],
   imports: [
     CommonModule,
     ProductsPageRoutingModule

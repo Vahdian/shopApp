@@ -1,0 +1,11 @@
+.mainMenu {
+  text-align: center;
+  background-color: var(--color-primary);
+  padding: 15px;
+  &__link {
+    color: var(--greyNav);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 0.5rem;
+  }
+}
