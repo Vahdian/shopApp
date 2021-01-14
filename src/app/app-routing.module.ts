@@ -8,7 +8,7 @@ const routes: Routes = [
   {path:'products', loadChildren: ()=>
   import('./pages/products-page/products-page.module').then(m=> m.ProductsPageModule)
   },
-  {path:'', loadChildren: ()=>
+  {path:'gestion', loadChildren: ()=>
   import('./pages/gestion-page/gestion-page.module').then(m=> m.GestionPageModule)
   }
 ];

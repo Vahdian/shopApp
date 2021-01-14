@@ -1,0 +1,28 @@
+.footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+
+  &__socialBox {
+    padding-top: 30px;
+    display: block;
+
+    &__title h2 {
+      font-size: 1rem;
+    }
+  }
+  &__socialBox2 {
+    display: flex;
+    justify-content: center;
+    &__text {
+      border-right: 1px solid white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  &__copyright {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+}

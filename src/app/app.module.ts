@@ -9,7 +9,6 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsPageComponent,
   ],
   imports: [
     BrowserModule,
